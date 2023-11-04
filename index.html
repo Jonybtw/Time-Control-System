@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Sistema de Controlo de Tempo</title>
+    <!-- JavaScript para gerir as ações dos botões -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Sistema de Controlo de Tempo</h1>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <h2>Criar Trabalhador</h2>
+            <div class="input-container">
+                <input type="text" id="workerName" placeholder="Nome do trabalhador">
+                <button onclick="createWorker()">Criar Trabalhador</button>
+            </div>
+
+            <h2>Criar Projeto</h2>
+            <div class="input-container">
+                <input type="text" id="projectName" placeholder="Nome do projeto">
+                <button onclick="createProject()">Criar Projeto</button>
+            </div>
+
+            <h2>Selecionar Trabalhador</h2>
+            <select id="workerSelect">
+                <!-- Os trabalhadores serão carregados dinamicamente da base de dados usando PHP -->
+            </select>
+
+            <h2>Selecionar Projeto</h2>
+            <select id="projectSelect">
+                <!-- Os projetos serão carregados dinamicamente da base de dados usando PHP -->
+            </select>
+
+            <h2>Controlo de Tempo</h2>
+            <button onclick="startTimer()">Começar Temporizador</button>
+            <button onclick="stopTimer()">Parar Temporizador</button>
+            <p id="timer">00:00:00</p>
+            
+
+            <h2>Lista de Trabalhadores</h2>
+            <ul id="workerList">
+                <!-- Lista de trabalhadores aparecerão aqui -->
+            </ul>
+
+            <h2>Lista de Projetos</h2>
+            <ul id="projectList">
+                <!-- Lista de projetos aparecerão aqui -->
+            </ul>
+        </div>
+
+        <div class="right-content">
+            <h2 class="tabela">Registos de Tempo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID do Trabalhador</th>
+                        <th>Nome do Trabalhador</th>
+                        <th>Nome do Projeto</th>
+                        <th>Data de Início</th>
+                        <th>Data Final</th>
+                        <th>Tempo Total</th>
+                    </tr>
+                </thead>
+                <tbody id="timeRecords">
+                    <!-- Os registos de tempo serão carregados dinamicamente da base de dados usando PHP e JavaScript -->
+                </tbody>
+            </table>            
+        </div>
+    </div>
+</body>
+</html>

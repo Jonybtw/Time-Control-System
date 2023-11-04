@@ -1,0 +1,205 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,103,149,1) 0%, rgba(0,166,255,0.35476197314863445) 100%); 
+}
+
+.header {
+    background-color: #007bff;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: 0 0 5px #cacaca;
+}
+
+.content {
+    display: flex;
+}
+
+.left-content {
+    flex: 1;
+    padding: 20px;
+    height: fit-content;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    /* Adicionar cantos arredondados */
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.right-content {
+    flex: 2;
+    padding: 20px;
+    height: fit-content;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    /* Adicionar cantos arredondados */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para caixas de texto de entrada e seleção */
+input[type="text"],
+select {
+    width: 100%;
+    /* Torná-los largura total */
+    max-width: 250px;
+    /* Limitar a largura, se necessário */
+    padding: 10px;
+    /* Adicionar preenchimento para espaçamento */
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+    /* Adicionar uma borda */
+    border-radius: 3px;
+    /* Adicionar cantos arredondados */
+    background-color: #fff;
+    /* Cor de fundo */
+    color: #333;
+    /* Cor do texto */
+    cursor: text;
+    /* Mudar o cursor ao passar o rato */
+    transition: border-color 0.25s;
+    /* Adicionar uma transição para o efeito de hover */
+}
+
+/* Estilo para caixas de texto de entrada e seleção no hover */
+input[type="text"]:hover,
+select:hover {
+    border-color: #007bff;
+    /* Alterar a cor da borda ao passar o rato */
+}
+
+/* Estilo para caixas de texto de entrada e seleção com foco */
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff;
+    /* Alterar a cor da borda com foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Adicionar uma sombra com foco */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+    transition: all 250ms;
+}
+
+button:hover,
+button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    background-color: #0061c9;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+#timer {
+    font-weight: bold;
+    /* Torna o texto em negrito */
+    margin-left: 15%;
+    /* Move o elemento para a direita */
+}
+
+/* Use delete-button and delete-button:hover classes */
+.delete-button {
+    width: 80px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+/* CSS to right-align the "Eliminar" buttons */
+li {
+    margin-right: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    max-width: 550px;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    margin: 0 auto;
+}
+
+h2.tabela {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    /* Increase the maximum width as needed */
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    table-layout: auto;
+    /* Allow table cells to automatically adjust width */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+    /* Allow cell content to wrap */
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    /* Cor branca para linhas ímpares */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dfdfdf;
+    /* Cor cinzenta para linhas pares */
+}
